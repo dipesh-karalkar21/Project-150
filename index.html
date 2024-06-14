@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: black">
+
+        <a-sky src = "https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvia_lactea.png?v=1604296331712"></a-sky>
+
+        <a-assets>
+            <a-asset-item id = "train" src = "Train.glb" ></a-asset-item>
+        </a-assets>
+
+        <a-entity position="0.5 1 9">
+            <a-camera  ></a-camera>
+        </a-entity>
+
+
+        <a-entity gltf-model = "#train" scale = "0.05 0.05 0.055" position = "0 0 2.15" ></a-entity>
+        <a-plane width = "35" height = "20" src = "bg.jpg" material = "side : double" position = "0 4 0" ></a-plane>
+        <a-plane width = "8.5" height = "35" src = "rail.jpg" material = "side : double" rotation = "90 90 0" position = "0 0 2.5" ></a-plane>
+
+
+    </a-scene>
+</body>
+
+</html>
